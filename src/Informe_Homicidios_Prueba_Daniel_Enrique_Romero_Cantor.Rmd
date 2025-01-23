@@ -8,42 +8,29 @@ output:
     toc_depth: 2
 ---
 
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
 ## Gráfica de Distribución por Fuentes
-
-El análisis de las víctimas reportadas muestra que **6 personas** aparecen únicamente en la fuente A, mientras que **5 personas** están registradas solamente en la fuente B. Además, **4 personas** han sido identificadas en ambas fuentes. Esto sugiere cierta superposición de datos, aunque también evidencia diferencias significativas entre las fuentes de información.Para este fin se utilizó el número de cédula de la persona para identificar si estaba duplicada en alguno de los dos informes, así las cosas solo hay 15 personas identificadas de los 20 datos en ambos documentos.
-
 
 ```{r grafica-por-categorias, echo=FALSE, fig.cap='Distribución de Víctimas por Fuentes'}
 knitr::include_graphics('C:/Users/danromer8/Downloads/Prueba_Tecnica/output/grafica_categorias.png')
 
 ```
-
+El análisis de las víctimas reportadas muestra que **6 personas** aparecen únicamente en la fuente A, mientras que **5 personas** están registradas solamente en la fuente B. Además, **4 personas** han sido identificadas en ambas fuentes.Esto demuestra duplicación de datos en la base de homicidios,Para identificarlos se utilizó el número de cédula de la persona para identificar si estaba duplicada en alguno de los dos informes, así las cosas solo hay 15 personas identificadas de los 20 datos en ambos documentos.
 
 ## Gráfica por Sexo
-
-Los homicidios se distribuyen principalmente entre hombres y mujeres, siendo los hombres el grupo más afectado con un predominio claro en el departamento de Antioquia. En este departamento, el número de homicidios de hombres es considerablemente mayor en comparación con otras regiones.
-
-
 ```{r grafica-por-sexo, echo=FALSE, fig.cap='Homicidios por Departamento y Sexo'}
 knitr::include_graphics('C:/Users/danromer8/Downloads/Prueba_Tecnica/output/grafica_por_sexo.png')
 ```
+Los homicidios se distribuyen principalmente entre hombres y mujeres, siendo los hombres el grupo más afectado con un predominio claro en el departamento de Antioquia. En este departamento, el número de homicidios de hombres es considerablemente mayor en comparación con otras regiones.
 
 ## Gráfica por Grupo Etario
-
-El análisis por grupo etario revela que la mayoría de las víctimas están en el rango de edad de **18-30 años**, seguido de menores de 18 años y, en menor proporción, personas mayores de 30 años. En el departamento de Antioquia se observa una mayor concentración de homicidios en estos grupos etarios, lo que destaca su vulnerabilidad.
-
-
 
 ```{r grafica-por-grupo-etario, echo=FALSE, fig.cap='Homicidios por Departamento y Grupo Etario'}
 knitr::include_graphics('C:/Users/danromer8/Downloads/Prueba_Tecnica/output/grafica_por_grupo_etario.png')
 ```
-
-
+El análisis por grupo etario revela que la mayoría de las víctimas están en el rango de edad de **18-30 años**, seguido de menores de 18 años y, en menor proporción, personas mayores de 30 años. En el departamento de Antioquia se observa una mayor concentración de homicidios en estos grupos etarios, lo que destaca su vulnerabilidad.
 
 
 
